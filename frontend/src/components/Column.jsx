@@ -339,7 +339,7 @@ const ColumnButton = styled.button`
   margin-left: 5px;
 `;
 
-const colors = ['#ec7263', '#719192', '#ff9933', '#3399ff']; // Define your colors here
+const colors = ['#ec7263', '#719192', '#ff9933', '#927fbf']; // Define your colors here
 
 function Column(props) {
   const [isEditing, setIsEditing] = useState(false);

@@ -572,7 +572,7 @@ const BoardContainer = styled.div`
     flex-direction: column;
     align-items: center; /* Align columns horizontally at center */
     padding: 16px;
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #a0c1e3; /* Light gray background */
     min-height: 100vh; /* Ensure the board takes up the full height of the viewport */
     max-width: 100vw;
 `;
@@ -594,8 +594,8 @@ const MainTitle = styled.h1`
 
 const LogoutButton = styled.button`
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 25px;
+    right: 18px;
     padding: 8px 16px;
     background-color: #f95959; /* Red */
     color: white;
