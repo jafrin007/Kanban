@@ -296,7 +296,6 @@
 // }
 
 // export default Column;
-
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Droppable, Draggable } from 'react-beautiful-dnd';
@@ -382,6 +381,25 @@ function Column(props) {
 
   const color = colors[props.index % colors.length]; // Assign color based on column index
 
+  function deleteTask(taskId) {
+    const newTasks = { ...props.state.tasks };
+    delete newTasks[taskId];
+
+    const updatedColumn = {
+      ...props.column,
+      taskIds: props.column.taskIds.filter(id => id !== taskId)
+    };
+
+    props.setState({
+      ...props.state,
+      tasks: newTasks,
+      columns: {
+        ...props.state.columns,
+        [props.column.id]: updatedColumn
+      }
+    });
+  }
+
   return (
     <Draggable draggableId={props.column.id} index={props.index}>
       {(provided) => (
@@ -421,7 +439,7 @@ function Column(props) {
                     setState={props.setState}
                     updateTaskContent={props.updateTaskContent} // Pass updateTaskContent here
                     color={color} // Pass color to Task component
-                    deleteTask={props.deleteTask} // Pass deleteTask function to Task component
+                    deleteTask={deleteTask} // Pass deleteTask function to Task component
                   />
                 ))}
                 {provided.placeholder}
