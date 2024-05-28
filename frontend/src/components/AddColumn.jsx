@@ -63,7 +63,7 @@ const ColumnButton = styled.button`
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
 `;
 
@@ -72,7 +72,7 @@ const ColumnInput = styled.input`
     padding: 8px;
     width: 180px;
     border: 1px solid lightgrey;
-    border-radius: 4px;
+    border-radius: 16px;
 `;
 
 function AddColumn(props) {
@@ -120,7 +120,7 @@ function AddColumn(props) {
         <div>
             {
                 showNewColumnButton ?
-                <ColumnButton onClick={onNewColumnButtonClick}>New Column</ColumnButton> :
+                <ColumnButton onClick={onNewColumnButtonClick}>New Task</ColumnButton> :
                 <ColumnInput 
                     type="text" 
                     value={value} 
