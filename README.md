@@ -15,6 +15,11 @@ python -m venv env
 ```bash
 .\env\Scripts\activate
 ```
+### Install Requirements
+```bash
+pip insatll -r requirements.txt
+```
+
 ### Setting up the database
 Open a new Terminal without closing the present terminal and ensure docker desktop is running in your system. From the kanban directory run the below code
 ```bash
