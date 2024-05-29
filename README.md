@@ -26,7 +26,7 @@ Open a new Terminal without closing the present terminal and ensure docker deskt
 docker-compose up
 ```
 PostgreSQL will be running in the port 8080
-[http://127.0.0.1:8080](http://127.0.0.1:8080/)
+[http://127.0.0.1:8082](http://127.0.0.1:8082/)
 You can login with the username: **postgres** and password **Password1** and ensure you have selected **postgresSQL** from the dropdown in system
 Press Login
 Select DB as postgres from the dropdown near the left side of the screen below Adminer tab
