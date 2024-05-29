@@ -42,6 +42,9 @@ Open a new terminal and got to the frontend directory
 ```bash
 cd .\frontend\
 ```
+```bash
+npm install react-scripts --save-dev
+```
 
 run the below command
 ```bash
