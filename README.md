@@ -33,10 +33,6 @@ Select DB as postgres from the dropdown near the left side of the screen below A
 
 ### Hosting the backend after setting up the database
 Go back to the previous terminal and run the command to complete the backend setup
-install uvicorn
-```bash
-pip install uvicorn
-```
 ```bash
 uvicorn main:app --reload 
 ```
