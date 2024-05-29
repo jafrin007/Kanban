@@ -17,7 +17,7 @@ python -m venv env
 ```
 ### Install Requirements
 ```bash
-pip insatll -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Setting up the database
