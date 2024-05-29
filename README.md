@@ -36,7 +36,7 @@ Please ensure that you are using  node v16 or below
 Open a new terminal and got to the frontend directory
 ```bash
 cd .\frontend\
-```bash
+```
 
 run the below command
 ```bash
